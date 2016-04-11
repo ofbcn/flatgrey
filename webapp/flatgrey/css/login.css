@@ -1,0 +1,18 @@
+.contentarea {
+	margin-left: 0;
+	margin-top: 0;
+}
+
+.login-screenlet {
+	min-width: 400px;
+	width: 25%;
+	margin-top: 5%;
+}
+
+.login-screenlet .screenlet-title-bar {
+	text-align: center;
+}
+
+.login-screenlet .basic-table td.label {
+	width: 34%;
+}
