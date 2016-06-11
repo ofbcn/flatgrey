@@ -239,7 +239,7 @@ th, th a {
 .contentarea {
 	margin-top: 35px;
 	margin-left: 190px;
-	padding: 5px;
+	padding: 6px 9px;
 	min-height: 500px;
 }
 
@@ -713,7 +713,6 @@ th, th a {
 
 .tab-bar {
 	display: table;
-	margin: 0.5em 0.5em 0 0.5em;
 }
 
 .tab-bar ul li ul li {
@@ -1728,8 +1727,6 @@ A.browsecategorybutton {
 /*     Multi-Column Styles      */
 /* ---------------------------- */
 #column-container {
-	margin: auto;
-	padding: 0 0 0 0.5em;
 	position: relative;
 }
 
