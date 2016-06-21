@@ -120,16 +120,6 @@ under the License.
             <li class="logo-area"><a href="<@noerpUrl>${logoLinkURL}</@noerpUrl>"><img alt="${layoutSettings.companyName}" src="<@noerpContentUrl>${StringUtil.wrapString(headerImageUrl)}</@noerpContentUrl>"/></a></li>
         </#if>
       </#if>
-      <#if layoutSettings.middleTopMessage1?has_content && layoutSettings.middleTopMessage1 != " ">
-        <li>
-        <div class="last-system-msg">
-        <center>${layoutSettings.middleTopHeader!}</center>
-        <a href="${layoutSettings.middleTopLink1!}">${layoutSettings.middleTopMessage1!}</a><br/>
-        <a href="${layoutSettings.middleTopLink2!}">${layoutSettings.middleTopMessage2!}</a><br/>
-        <a href="${layoutSettings.middleTopLink3!}">${layoutSettings.middleTopMessage3!}</a>
-        </div>
-        </li>
-      </#if>
       <li class="preference-area">
           <ul>
           <#if userLogin??>
@@ -146,6 +136,16 @@ under the License.
             <#else>
               <li>${userLogin.userLoginId}</li>
             </#if>
+			<#if layoutSettings.middleTopMessage1?has_content && layoutSettings.middleTopMessage1 != " ">
+        	<li>
+		        <div class="last-system-msg">
+		        	<span>${layoutSettings.middleTopHeader!}</span>
+			        <a href="${layoutSettings.middleTopLink1!}">${layoutSettings.middleTopMessage1!}</a><br/>
+			        <a href="${layoutSettings.middleTopLink2!}">${layoutSettings.middleTopMessage2!}</a><br/>
+			        <a href="${layoutSettings.middleTopLink3!}">${layoutSettings.middleTopMessage3!}</a>
+		        </div>
+	        </li>
+	      </#if>
             <li><a href="<@noerpUrl>logout</@noerpUrl>">${uiLabelMap.CommonLogout}</a></li>
           <#else/>
             <li>${uiLabelMap.CommonWelcome}! <a href="<@noerpUrl>${checkLoginUrl}</@noerpUrl>">${uiLabelMap.CommonLogin}</a></li>
