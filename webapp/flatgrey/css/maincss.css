@@ -1394,7 +1394,8 @@ input, button, select, textarea {
 a.buttontext, a.buttontextbig, .smallSubmit, .smallSubmit:hover,
 	.mediumSubmit, .largeSubmit, .loginButton, .button-style-1 a,
 	.button-style-1 ul a, .button-style-2 ul a, .button-style-2 a, .button,
-	button, input[type="reset"], input[type="submit"], input[type="button"]
+	button, input[type="reset"], input[type="submit"], input[type="button"],
+	li.buttontext a
 	{
 	-webkit-appearance: none;
 	-moz-border-radius: 1.1em;
