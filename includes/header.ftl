@@ -137,6 +137,7 @@ under the License.
               <li>${userLogin.userLoginId}</li>
             </#if>
 			<#if layoutSettings.middleTopMessage1?has_content && layoutSettings.middleTopMessage1 != " ">
+			<!--
         	<li>
 		        <div class="last-system-msg">
 		        	<span>${layoutSettings.middleTopHeader!}</span>
@@ -145,6 +146,7 @@ under the License.
 			        <a href="${layoutSettings.middleTopLink3!}">${layoutSettings.middleTopMessage3!}</a>
 		        </div>
 	        </li>
+	        -->
 	      </#if>
             <li><a href="<@noerpUrl>logout</@noerpUrl>">${uiLabelMap.CommonLogout}</a></li>
           <#else/>
