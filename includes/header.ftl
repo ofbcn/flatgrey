@@ -87,6 +87,9 @@ under the License.
         </#list>
       </script>
     </#if>
+	<script type="text/javascript">
+        var contextUrl = "${StringUtil.wrapString(request.getContextPath())}";
+    </script>
 </head>
 <#if layoutSettings.headerImageLinkUrl??>
   <#assign logoLinkURL = "${layoutSettings.headerImageLinkUrl}">
