@@ -49,14 +49,14 @@ under the License.
             </#if>
         </#list>
     </#if>
-    <#if layoutSettings.styleSheets?has_content>
-        <#--layoutSettings.styleSheets is a list of style sheets. So, you can have a user-specified "main" style sheet, AND a component style sheet.-->
-        <#list layoutSettings.styleSheets as styleSheet>
+	<#if layoutSettings.VT_STYLESHEET?has_content>
+        <#list layoutSettings.VT_STYLESHEET as styleSheet>
             <link rel="stylesheet" href="<@noerpContentUrl>${StringUtil.wrapString(styleSheet)}</@noerpContentUrl>" type="text/css"/>
         </#list>
     </#if>
-	<#if layoutSettings.VT_STYLESHEET?has_content>
-        <#list layoutSettings.VT_STYLESHEET as styleSheet>
+    <#if layoutSettings.styleSheets?has_content>
+        <#--layoutSettings.styleSheets is a list of style sheets. So, you can have a user-specified "main" style sheet, AND a component style sheet.-->
+        <#list layoutSettings.styleSheets as styleSheet>
             <link rel="stylesheet" href="<@noerpContentUrl>${StringUtil.wrapString(styleSheet)}</@noerpContentUrl>" type="text/css"/>
         </#list>
     </#if>
@@ -118,9 +118,9 @@ under the License.
       </#if>
       <#if headerImageUrl??>
         <#if organizationLogoLinkURL?has_content>
-            <li class="org-logo-area"><a href="<@noerpUrl>${logoLinkURL}</@noerpUrl>"><img alt="${layoutSettings.companyName}" src="<@noerpContentUrl>${StringUtil.wrapString(organizationLogoLinkURL)}</@noerpContentUrl>"></a></li>
+            <li class="org-logo-area"><a href="<@noerpUrl>${logoLinkURL}</@noerpUrl>" title="Biological Information Management Suite"><img alt="${layoutSettings.companyName}" src="<@noerpContentUrl>${StringUtil.wrapString(organizationLogoLinkURL)}</@noerpContentUrl>"></a></li>
         <#else>
-            <li class="logo-area"><a href="<@noerpUrl>${logoLinkURL}</@noerpUrl>"><img alt="${layoutSettings.companyName}" src="<@noerpContentUrl>${StringUtil.wrapString(headerImageUrl)}</@noerpContentUrl>"/></a></li>
+            <li class="logo-area"><a href="<@noerpUrl>${logoLinkURL}</@noerpUrl>" title="Biological Information Management Suite"><img alt="${layoutSettings.companyName}" src="<@noerpContentUrl>${StringUtil.wrapString(headerImageUrl)}</@noerpContentUrl>"/></a></li>
         </#if>
       </#if>
       <li class="preference-area">

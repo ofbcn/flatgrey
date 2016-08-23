@@ -23,7 +23,7 @@ under the License.
         <li class="last"><a href="<@noerpUrl>ListVisualThemes</@noerpUrl>">${uiLabelMap.CommonVisualThemes}</a></li>
     </ul>
   <p>
-  ${uiLabelMap.CommonCopyright} (c) 2015-${nowTimestamp?string("yyyy")} <a href="http://www.buymice.net" target="_blank">南京百迈斯信息科技有限公司</a> ${uiLabelMap.CommonPoweredBy} <a href="http://noerp.org" target="_blank">NoERP</a>
+  ${uiLabelMap.CommonCopyright} (c) ${nowTimestamp?string("yyyy")} <a href="http://www.buymice.net" target="_blank">南京百迈斯信息科技有限公司</a> ${uiLabelMap.CommonPoweredBy} <a href="http://noerp.org" target="_blank">NoERP</a>
   </p>
 </div>
 </div>

@@ -276,11 +276,11 @@ th, th a {
 }
 
 #masthead ul .logo-area {
-	padding: 0.6em 0.8em;
+	padding: 0.6em 1em;
 }
 
 #masthead ul .org-logo-area {
-	padding: 0.1em 0.8em;
+	padding: 0.6em 1em;
 }
 
 #masthead ul .org-logo-area img {
@@ -350,7 +350,7 @@ th, th a {
 #main-navigation {
 	position: absolute;
 	top: 11px;
-	left: 135px;
+	left: 100px;
 	clear: both;
 	color: #fff;
 	font-size: 1em;
