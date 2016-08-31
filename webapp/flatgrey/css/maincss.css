@@ -2123,3 +2123,12 @@ html> /**/ body .jstree-default a {
 	white-space: normal;
 	height: auto;
 }
+
+.required.error {
+	border:1px solid red;
+}
+
+label.error {
+	color:red;
+	padding-left: 5px;
+}
