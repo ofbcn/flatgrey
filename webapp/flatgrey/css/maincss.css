@@ -961,7 +961,7 @@ collection of buttons used in lists */
 }
 
 .calendar .header-row td {
-	background-color: #47637c;
+	background-color: #999;
 	border-bottom: 0.1em solid #cccccc;
 	border-left: 0.1em solid #cccccc;
 	color: #ffffff;
